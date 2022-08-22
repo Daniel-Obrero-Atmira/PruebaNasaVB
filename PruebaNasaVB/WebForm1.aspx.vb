@@ -8,7 +8,6 @@
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim api = New MeteoritoService()
-
         lista = api.ObtenerTop3(Integer.Parse(DropDownList1.SelectedItem.Value))
 
         If top1.Visible Then
