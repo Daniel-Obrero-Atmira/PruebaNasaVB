@@ -93,7 +93,7 @@
         Dim errores = New List(Of String)
         lista = api.ObtenerTop3(Integer.Parse(DropDownList1.SelectedItem.Value))
         For index = 0 To lista.Count - 1
-            obj_meteorito.ingresar_meteoritos(lista(index).nombre, lista(index).diametro, lista(index).fecha, lista(index).velocidad, lista(index).planeta)
+            obj_meteorito.Ingresar_meteoritos(lista(index).nombre, lista(index).diametro, lista(index).fecha, lista(index).velocidad, lista(index).planeta)
         Next
 
         errores = obj_meteorito.status
